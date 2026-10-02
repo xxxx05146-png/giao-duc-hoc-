@@ -5486,7 +5486,556 @@ const questions = [
     ],
     "answer": 0
 },
-    
+{
+    "id": 501,
+    "question": "Theo nghĩa Hán Việt, từ \"sư\" và \"phạm\" trong từ \"sư phạm\" có nghĩa là gì?",
+    "options": [
+      "\"Sư\" là học trò, \"phạm\" là pháp luật",
+      "\"Sư\" là thầy, \"phạm\" là khuôn thước, mẫu mực",
+      "\"Sư\" là suy nghĩ, \"phạm\" là phạm vi",
+      "\"Sư\" là kiến thức, \"phạm\" là kỹ năng"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 502,
+    "question": "Ai là người đã gọi người giáo viên là người \"chuyển giao ngọn đuốc của nền văn minh\", \"sợi dây chuyền giữa các thế hệ\"?",
+    "options": [
+      "A.F. Đixtecvec",
+      "J.A. Cômenxki",
+      "V.A. Xu-khôm-lin-xki",
+      "K.D. Usinxki"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 503,
+    "question": "Luận điểm nào sau đây khẳng định vai trò cầu nối của người giáo viên đối với nền văn hóa xã hội?",
+    "options": [
+      "Giáo viên là người quản lý hành chính nhà trường",
+      "Giáo viên là \"đầu nối\" giữa nền văn hóa xã hội và việc tái sản xuất nền văn hóa đó ở thế hệ trẻ",
+      "Giáo viên là người lao động sản xuất vật chất trực tiếp",
+      "Giáo viên là người cung cấp dịch vụ thương mại"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 504,
+    "question": "\"Giáo dục một người đàn ông được một người đàn ông, giáo dục một người đàn bà được cả một gia đình, giáo dục một người thầy được cả một xã hội.\" Đây là câu nói nổi tiếng của ai?",
+    "options": [
+      "V.A. Xu-khôm-lin-xki",
+      "Tagore",
+      "J.A. Cômenxki",
+      "A.S. Macarencô"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 505,
+    "question": "Theo Raja Roy Singh (1994), yếu tố nào quyết định dứt khoát sự thành công của các cuộc cải cách giáo dục?",
+    "options": [
+      "Tổng kinh phí đầu tư tài chính",
+      "\"Ý chí muốn thay đổi\" cũng như chất lượng giáo viên",
+      "Số lượng thiết bị công nghệ trong lớp học",
+      "Số lượng học sinh trên mỗi lớp"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 506,
+    "question": "Câu nói \"Người giáo viên bình thường mang chân lý đến cho trò, người giáo viên giỏi biết dạy cho trò đi tìm chân lý\" là của nhà giáo dục nào?",
+    "options": [
+      "J.A. Cômenxki",
+      "A.F. Đixtecvec",
+      "K.D. Usinxki",
+      "A.S. Macarencô"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 507,
+    "question": "Chủ tịch Hồ Chí Minh đã ví những người thầy giáo tốt xứng đáng là thầy giáo với danh hiệu cao quý nào?",
+    "options": [
+      "Những chiến sĩ trên mặt trận văn hóa",
+      "Những anh hùng vô danh",
+      "Những kỹ sư tâm hồn",
+      "Những ngọn đuốc soi đường"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 508,
+    "question": "Trích dẫn nào sau đây của Chủ tịch Hồ Chí Minh khẳng định vị trí quyết định của người thầy giáo đối với sự nghiệp giáo dục?",
+    "options": [
+      "Học tập để làm việc, làm người, làm cán bộ",
+      "Không có thầy giáo thì không có giáo dục",
+      "Vì lợi ích mười năm trồng cây, vì lợi ích trăm năm trồng người",
+      "Giáo dục nhằm đào tạo con người toàn diện"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 509,
+    "question": "Nghị quyết Hội nghị lần thứ hai Ban Chấp hành Trung ương Đảng khóa VIII khẳng định vị trí của đội ngũ giáo viên như thế nào?",
+    "options": [
+      "Đội ngũ giáo viên là lực lượng lao động hành chính",
+      "Đội ngũ giáo viên giữ vai trò quyết định chất lượng giáo dục và được xã hội tôn vinh",
+      "Đội ngũ giáo viên là lực lượng hỗ trợ giảng dạy",
+      "Đội ngũ giáo viên là lực lượng duy nhất thực hiện giáo dục"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 510,
+    "question": "Theo Luật Giáo dục 2019, quy định nào sau đây thuộc về nhiệm vụ chung của nhà giáo?",
+    "options": [
+      "Được hợp đồng thỉnh giảng tại các cơ sở nghiên cứu khoa học",
+      "Giữ gìn phẩm chất, uy tín, danh dự của nhà giáo, tôn trọng nhân cách của người học",
+      "Được hưởng tiền lương và chế độ phụ cấp ưu đãi",
+      "Được nghỉ hè, nghỉ Tết âm lịch theo quy định"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 511,
+    "question": "Quyền hạn nào sau đây của nhà giáo được quy định trong Luật Giáo dục 2019?",
+    "options": [
+      "Thực hiện đầy đủ và có chất lượng chương trình giáo dục",
+      "Được giảng dạy theo chuyên ngành đào tạo",
+      "Gương mẫu thực hiện nghĩa vụ công dân",
+      "Không ngừng học tập, rèn luyện nâng cao trình độ"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 512,
+    "question": "Cố Thủ tướng Phạm Văn Đồng đã đánh giá như thế nào về tính sáng tạo của nghề dạy học?",
+    "options": [
+      "Nghề dạy học là nghề lao động kỹ thuật cao",
+      "Nghề dạy học là một nghề sáng tạo bậc nhất vì nó sáng tạo ra những con người sáng tạo",
+      "Nghề dạy học là nghề áp dụng công thức có sẵn",
+      "Nghề dạy học là nghề truyền thụ tri thức thuần túy"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 513,
+    "question": "Đối tượng của hoạt động sư phạm là gì?",
+    "options": [
+      "Sách giáo khoa và giáo trình",
+      "Người học – thế hệ trẻ đang trong giai đoạn hình thành và phát triển nhân cách",
+      "Thiết bị và cơ sở vật chất lớp học",
+      "Hệ thống tri thức khoa học"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 514,
+    "question": "Đặc điểm nào thể hiện vai trò hai mặt của người học trong hoạt động sư phạm?",
+    "options": [
+      "Người học vừa là nguồn thu vừa là chi phí",
+      "Người học vừa là đối tượng tác động giáo dục vừa là chủ thể năng động, sáng tạo",
+      "Người học vừa là người dạy vừa là người quản lý",
+      "Người học vừa là công cụ vừa là sản phẩm"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 515,
+    "question": "Trong hoạt động sư phạm, loại công cụ nào được xem là quan trọng nhất, chủ yếu nhất của người giáo viên?",
+    "options": [
+      "Giáo án và tài liệu giảng dạy",
+      "Nhân cách của người giáo viên",
+      "Phương tiện công nghệ thông tin",
+      "Bảng viết và câu hỏi kiểm tra"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 516,
+    "question": "Sản phẩm của hoạt động sư phạm là gì?",
+    "options": [
+      "Bằng cấp và chứng chỉ học tập",
+      "Nhân cách toàn diện của người học",
+      "Các công trình nghiên cứu vật chất",
+      "Số lượng bài giảng được hoàn thành"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 517,
+    "question": "Lao động sư phạm của người giáo viên thuộc loại lao động nào dưới đây?",
+    "options": [
+      "Lao động sản xuất vật chất trực tiếp",
+      "Dạng lao động sản xuất \"phi vật chất\" đem lại hiệu quả kinh tế – xã hội lâu dài",
+      "Lao động giản đơn không cần đào tạo",
+      "Lao động hành chính sự nghiệp thuần túy"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 518,
+    "question": "Nhà giáo dục V.A. Xu-khôm-lin-xki đã cảnh báo điều gì về hậu quả sai lầm trong lao động sư phạm?",
+    "options": [
+      "Sai lầm của giáo viên chỉ ảnh hưởng đến điểm số",
+      "Không có một thứ lao động nào mà những sai lầm và thất bại lại dẫn đến những hậu quả nặng nề như lao động của người giáo viên",
+      "Sai lầm của giáo viên dễ dàng sửa chữa ngay lập tức",
+      "Sai lầm của giáo viên không làm ảnh hưởng đến nhân cách học sinh"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 519,
+    "question": "Yêu cầu về \"Phẩm chất nghề nghiệp\" của người giáo viên phổ thông bao gồm nội dung nào sau đây?",
+    "options": [
+      "Kỹ năng sử dụng phần mềm đồ họa",
+      "Thế giới quan khoa học, lập trường tư tưởng chính trị vững vàng và tình cảm nghề nghiệp trong sáng",
+      "Kỹ năng soạn thảo văn bản hành chính",
+      "Trình độ ngoại ngữ chuyên ngành sâu"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 520,
+    "question": "Theo chương trình giáo dục hiện nay, nhóm năng lực nghề nghiệp của người giáo viên phổ thông gồm bao nhiêu nhóm năng lực chính?",
+    "options": [
+      "3 nhóm",
+      "5 nhóm",
+      "7 nhóm",
+      "10 nhóm"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 521,
+    "question": "Nhóm năng lực nào sau đây KHÔNG thuộc 5 nhóm năng lực nghề nghiệp của người giáo viên phổ thông?",
+    "options": [
+      "Nhóm năng lực tìm hiểu và nắm vững đặc điểm học sinh",
+      "Nhóm năng lực kinh doanh và quản lý tài chính doanh nghiệp",
+      "Nhóm năng lực tổ chức dạy học và giáo dục",
+      "Nhóm năng lực nghiên cứu khoa học sư phạm ứng dụng"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 522,
+    "question": "Năng lực \"Thu thập và xử lý thông tin về học sinh, vận dụng các phương pháp tác động phù hợp\" thuộc nhóm năng lực nào của giáo viên?",
+    "options": [
+      "Nhóm năng lực hoạt động xã hội",
+      "Nhóm năng lực tìm hiểu và nắm vững đặc điểm học sinh",
+      "Nhóm năng lực tự học, tự bồi dưỡng",
+      "Nhóm năng lực tổ chức dạy học"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 523,
+    "question": "Năng lực \"Thiết kế kế hoạch dạy học và giáo dục, tổ chức thực hiện và đánh giá kết quả\" thuộc nhóm năng lực nào?",
+    "options": [
+      "Nhóm năng lực nghiên cứu khoa học",
+      "Nhóm năng lực tổ chức dạy học và giáo dục",
+      "Nhóm năng lực hoạt động xã hội",
+      "Nhóm năng lực tự bồi dưỡng"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 524,
+    "question": "Việc \"Phối hợp các lực lượng giáo dục, giao tiếp, tham vấn và xử lý tình huống giáo dục\" thuộc nhóm năng lực nào của giáo viên?",
+    "options": [
+      "Nhóm năng lực tổ chức dạy học",
+      "Nhóm năng lực hoạt động xã hội",
+      "Nhóm năng lực nắm vững đặc điểm học sinh",
+      "Nhóm năng lực nghiên cứu khoa học"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 525,
+    "question": "Theo Điều lệ trường tiểu học (2020) và trường trung học (2020), trình độ chuẩn được đào tạo của giáo viên tiểu học, THCS, THPT là gì?",
+    "options": [
+      "Có bằng tốt nghiệp trung cấp sư phạm",
+      "Có bằng cử nhân ngành đào tạo giáo viên (hoặc cử nhân chuyên ngành phù hợp và có chứng chỉ bồi dưỡng NVSP)",
+      "Có bằng thạc sĩ giáo dục học",
+      "Có bằng cao đẳng sư phạm"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 526,
+    "question": "Chuẩn nghề nghiệp giáo viên cơ sở giáo dục phổ thông được quy định tại văn bản pháp quy nào của Bộ GD&ĐT?",
+    "options": [
+      "Thông tư số 27/2020/TT-BGDĐT",
+      "Thông tư số 20/2018/TT-BGDĐT",
+      "Thông tư số 22/2021/TT-BGDĐT",
+      "Thông tư số 32/2018/TT-BGDĐT"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 527,
+    "question": "Khung Chuẩn nghề nghiệp giáo viên cơ sở giáo dục phổ thông (Thông tư 20/2018/TT-BGDĐT) bao gồm bao nhiêu tiêu chuẩn và tiêu chí?",
+    "options": [
+      "3 tiêu chuẩn, 10 tiêu chí",
+      "5 tiêu chuẩn, 15 tiêu chí",
+      "4 tiêu chuẩn, 12 tiêu chí",
+      "6 tiêu chuẩn, 18 tiêu chí"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 528,
+    "question": "Tiêu chuẩn 1 trong Chuẩn nghề nghiệp giáo viên (Thông tư 20/2018/TT-BGDĐT) có tên gọi là gì?",
+    "options": [
+      "Phát triển chuyên môn, nghiệp vụ",
+      "Phẩm chất nhà giáo",
+      "Xây dựng môi trường giáo dục",
+      "Phát triển mối quan hệ giữa nhà trường, gia đình và xã hội"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 529,
+    "question": "Tiêu chuẩn 1 \"Phẩm chất nhà giáo\" gồm những tiêu chí cụ thể nào?",
+    "options": [
+      "Tiêu chí Đạo đức nhà giáo và Tiêu chí Phong cách nhà giáo",
+      "Tiêu chí Tư vấn và Tiêu chí Hỗ trợ học sinh",
+      "Tiêu chí Văn hóa nhà trường và Tiêu chí An toàn trường học",
+      "Tiêu chí Sử dụng ngoại ngữ và Tiêu chí CNTT"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 530,
+    "question": "Các tiêu chí \"Xây dựng kế hoạch dạy học và giáo dục\", \"Sử dụng PPDH&GD\", \"Kiểm tra đánh giá\" thuộc Tiêu chuẩn nào trong Chuẩn nghề nghiệp giáo viên?",
+    "options": [
+      "Tiêu chuẩn 1: Phẩm chất nhà giáo",
+      "Tiêu chuẩn 2: Phát triển chuyên môn, nghiệp vụ",
+      "Tiêu chuẩn 3: Xây dựng môi trường giáo dục",
+      "Tiêu chuẩn 4: Phát triển mối quan hệ xã hội"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 531,
+    "question": "Tiêu chuẩn 3 trong Chuẩn nghề nghiệp giáo viên có tên gọi là gì?",
+    "options": [
+      "Phát triển chuyên môn, nghiệp vụ",
+      "Xây dựng môi trường giáo dục",
+      "Phẩm chất nhà giáo",
+      "Sử dụng công nghệ thông tin"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 532,
+    "question": "Tiêu chuẩn 3 \"Xây dựng môi trường giáo dục\" bao gồm các tiêu chí nào sau đây?",
+    "options": [
+      "Tiêu chí Đạo đức nhà giáo, Tiêu chí Phong cách nhà giáo",
+      "Tiêu chí Văn hóa nhà trường, Tiêu chí Quyền dân chủ, Tiêu chí Trường học an toàn phòng chống bạo lực học đường",
+      "Tiêu chí Tạo dựng mối quan hệ hợp tác với cha mẹ học sinh",
+      "Tiêu chí Ứng dụng công nghệ thông tin"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 533,
+    "question": "Tiêu chuẩn 4 \"Phát triển mối quan hệ giữa nhà trường, gia đình và xã hội\" gồm bao nhiêu tiêu chí?",
+    "options": [
+      "2 tiêu chí",
+      "3 tiêu chí (TC11, TC12, TC13)",
+      "4 tiêu chí",
+      "5 tiêu chí"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 534,
+    "question": "Tiêu chuẩn 5 trong Chuẩn nghề nghiệp giáo viên quy định về nội dung gì?",
+    "options": [
+      "Phát triển chuyên môn bản thân",
+      "Sử dụng ngoại ngữ hoặc tiếng dân tộc, ứng dụng công nghệ thông tin, khai thác và sử dụng thiết bị công nghệ",
+      "Xây dựng môi trường giáo dục an toàn",
+      "Đạo đức và phong cách nhà giáo"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 535,
+    "question": "Khái niệm \"Phát triển nghề nghiệp giáo viên\" được hiểu như thế nào?",
+    "options": [
+      "Là việc thay đổi nơi công tác giữa các trường",
+      "Sự phát triển phẩm chất, năng lực nghề nghiệp thông qua học tập, nghiên cứu, tích lũy kinh nghiệm nhằm đáp ứng yêu cầu giáo dục ngày càng cao",
+      "Việc gia tăng mức lương và ngạch bậc công chức",
+      "Việc hoàn thành số tiết giảng dạy bắt buộc"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 536,
+    "question": "Phát triển nghề nghiệp giáo viên là một nhiệm vụ có tính chất như thế nào đối với người giáo viên?",
+    "options": [
+      "Chỉ thực hiện khi nhà trường yêu cầu",
+      "Nhiệm vụ bắt buộc và liên tục trong suốt quá trình hoạt động nghề nghiệp",
+      "Chỉ dành cho giáo viên mới vào nghề",
+      "Chỉ thực hiện trước khi thi nâng hạng chức danh"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 537,
+    "question": "Đâu KHÔNG PHẢI là một trong những định hướng hình thức phát triển nghề nghiệp của giáo viên phổ thông?",
+    "options": [
+      "Giáo viên tự định hướng, tự bồi dưỡng",
+      "Giáo viên tự ý bỏ giờ dạy chính khóa để đi làm thêm bên ngoài",
+      "Giáo viên tham gia hoạt động sinh hoạt tổ, nhóm chuyên môn",
+      "Giáo viên ứng dụng công nghệ thông tin trong phát triển nghề nghiệp"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 538,
+    "question": "Hoạt động sinh hoạt chuyên môn theo hướng nào được khuyến khích mạnh mẽ trong nhà trường phổ thông hiện nay?",
+    "options": [
+      "Sinh hoạt mang tính hành chính thuần túy",
+      "Sinh hoạt chuyên môn theo hướng nghiên cứu bài học, sinh hoạt chuyên đề, NCKH sư phạm ứng dụng",
+      "Sinh hoạt phân chia kinh phí nội bộ",
+      "Sinh hoạt phê bình cá nhân"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 539,
+    "question": "Việc giáo viên tham gia các cộng đồng học tập chuyên môn (PLC) trong nhà trường mang lại lợi ích chính nào?",
+    "options": [
+      "Giảm số tiết dạy bắt buộc",
+      "Tạo cơ hội kết nối, chia sẻ, hỗ trợ đồng nghiệp và nâng cao hiệu quả giải quyết khó khăn chuyên môn",
+      "Được miễn đánh giá chuẩn nghề nghiệp",
+      "Thay thế hoàn toàn việc tự học"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 540,
+    "question": "Ứng dụng công nghệ thông tin trong bồi dưỡng, tập huấn qua mạng mang lại ưu điểm nổi bật nào cho giáo viên?",
+    "options": [
+      "Bỏ qua các yêu cầu chuyên môn",
+      "Linh hoạt về thời gian, không gian, khai thác nguồn học liệu số phong phú và tăng cường kết nối",
+      "Không cần đánh giá kết quả",
+      "Giảm yêu cầu về phẩm chất đạo đức"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 541,
+    "question": "Học liệu số phục vụ phát triển nghề nghiệp giáo viên bao gồm những dạng nào?",
+    "options": [
+      "Chỉ gồm sách giáo khoa in giấy",
+      "Giáo trình điện tử, SGK điện tử, bài giảng điện tử, video, phần mềm mô phỏng, bảng dữ liệu số hóa...",
+      "Các bản chép tay cá nhân",
+      "Đồ dùng tự làm chưa được số hóa"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 542,
+    "question": "Nhà sư phạm A.F. Đixtecvec đánh giá mức độ cao nhất của người giáo viên giỏi ở điểm nào?",
+    "options": [
+      "Truyền thụ toàn bộ kiến thức trong sách",
+      "Biết dạy cho trò đi tìm chân lý",
+      "Yêu cầu học sinh học thuộc lòng bài giảng",
+      "Duy trì kỷ luật nghiêm khắc"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 543,
+    "question": "Đặc điểm \"Mục đích của hoạt động sư phạm\" chịu sự quy định và vận động theo yếu tố nào?",
+    "options": [
+      "Ý muốn chủ quan của cá nhân",
+      "Các giai đoạn phát triển của xã hội và yêu cầu đào tạo nguồn nhân lực",
+      "Sở thích ngẫu nhiên của học sinh",
+      "Điều kiện thời tiết"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 544,
+    "question": "Tại sao nói hoạt động sư phạm vừa mang tính khoa học vừa mang tính nghệ thuật cao?",
+    "options": [
+      "Vì giáo viên vừa dạy học vừa biểu diễn nghệ thuật",
+      "Vì đòi hỏi vừa nắm vững các quy luật khoa học tâm lý - giáo dục, vừa có sự tinh tế, ứng biến linh hoạt, sáng tạo trong xử lý tình huống",
+      "Vì công việc tuân theo công thức cố định",
+      "Vì sản phẩm tạo ra là vật thể nghệ thuật"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 545,
+    "question": "Sự khác biệt cơ bản giữa sản phẩm của hoạt động sư phạm và sản phẩm của các ngành lao động sản xuất vật chất là gì?",
+    "options": [
+      "Sản phẩm sư phạm tạo ra lợi nhuận ngay lập tức",
+      "Sản phẩm sư phạm là nhân cách toàn diện của con người – sản phẩm tinh thần quý giá, không tạo ra sản phẩm vật chất trực tiếp",
+      "Sản phẩm sư phạm đo lường dễ dàng trong thời gian ngắn",
+      "Sản phẩm sư phạm không có giá trị xã hội"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 546,
+    "question": "Môi trường sư phạm được đặc trưng bởi yếu tố cốt lõi nào?",
+    "options": [
+      "Tự phát theo tự nhiên",
+      "Được chọn lựa, xây dựng có mục đích sư phạm, chứa đựng những ảnh hưởng tự giác và định hướng tương lai",
+      "Bó hẹp hoàn toàn trong lớp học",
+      "Không có vai trò của giáo viên"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 547,
+    "question": "Yêu cầu về \"Tình cảm nghề nghiệp\" của người giáo viên bao gồm những khía cạnh nào?",
+    "options": [
+      "Tình yêu vật chất và danh vọng",
+      "Tình yêu con người nói chung, tình yêu nghề nghiệp và tình yêu thương học sinh sâu sắc",
+      "Sự thiên vị học sinh giỏi",
+      "Thái độ lạnh lùng tuyệt đối"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 548,
+    "question": "Trong 15 tiêu chí của Chuẩn nghề nghiệp giáo viên, tiêu chí nào quy định về việc \"Tư vấn và hỗ trợ học sinh\"?",
+    "options": [
+      "Tiêu chí 1",
+      "Tiêu chí 7",
+      "Tiêu chí 10",
+      "Tiêu chí 15"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 549,
+    "question": "Định hướng \"kết nối, hợp tác, chia sẻ và hỗ trợ đồng nghiệp\" trong phát triển nghề nghiệp bao gồm mô hình nào đang phổ biến hiện nay?",
+    "options": [
+      "Mô hình cạnh tranh điểm số giữa các giáo viên",
+      "Mô hình thành lập các cộng đồng học tập, nhóm cố vấn, huấn luyện giữa GV có kinh nghiệm và GV mới",
+      "Mô hình làm việc độc lập giấu nghề",
+      "Mô hình giao toàn bộ việc cho người khác"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 550,
+    "question": "Ý nghĩa lớn nhất của việc phát triển nghề nghiệp liên tục đối với người giáo viên phổ thông là gì?",
+    "options": [
+      "Tăng thu nhập từ dạy thêm",
+      "Gia tăng khả năng thích ứng của bản thân với những thay đổi trong lao động nghề nghiệp, giữ vững vai trò chủ đạo và góp phần thực hiện mục tiêu giáo dục",
+      "Được giảm bớt trách nhiệm giảng dạy",
+      "Đạt vị trí quản lý hành chính"
+    ],
+    "answer": 1
+  },      
 ]
 
 
