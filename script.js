@@ -5486,17 +5486,7 @@ const questions = [
     ],
     "answer": 0
 },
-{
-    "id": 501,
-    "question": "Mục đích cao nhất của nền giáo dục Việt Nam hiện nay là xây dựng con người như thế nào?",
-    "options": [
-        "Phát triển toàn diện, có đạo đức, trí tuệ, sức khỏe, thẩm mỹ và nghề nghiệp, đáp ứng yêu cầu xây dựng và bảo vệ Tổ quốc",
-        "Trở thành những chuyên gia kinh tế hàng đầu thế giới",
-        "Chỉ tập trung vào việc thi đỗ đại học",
-        "Trở thành những người lao động chân tay thuần túy"
-    ],
-    "answer": 0
-},
+    
 ]
 
 
