@@ -6035,7 +6035,557 @@ const questions = [
       "Đạt vị trí quản lý hành chính"
     ],
     "answer": 1
-  },      
+  },  
+  {
+    "id": 551,
+    "question": "Đặc trưng cơ bản nhất thể hiện bản chất của giáo dục với tư cách là một hiện tượng xã hội đặc biệt là gì?",
+    "options": [
+      "Sự truyền thụ và lĩnh hội kinh nghiệm lịch sử – xã hội giữa các thế hệ",
+      "Sự tăng trưởng chiều cao và thể lực của cơ thể",
+      "Sự biến đổi tự phát của tâm lý con người theo thời gian",
+      "Việc tích lũy tài sản vật chất qua các thời kỳ"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 552,
+    "question": "Tại sao có thể coi giáo dục như một kiểu \"di sản xã hội\" (di truyền xã hội)?",
+    "options": [
+      "Vì giáo dục được truyền qua nguồn gen sinh học của cha mẹ",
+      "Vì giáo dục thực hiện cơ chế truyền đạt và lĩnh hội kinh nghiệm đã tích lũy của loài người",
+      "Vì giáo dục chỉ xuất hiện ở các gia đình giàu có",
+      "Vì giáo dục không bị thay đổi qua các thời kỳ lịch sử"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 553,
+    "question": "Tính chất nào khẳng định giáo dục tồn tại ở mọi thời đại, mọi chế độ xã hội và gắn liền với sự tồn tại của loài người?",
+    "options": [
+      "Tính giai cấp",
+      "Tính xã hội – lịch sử",
+      "Tính phổ biến và vĩnh hằng",
+      "Tính nhân văn"
+    ],
+    "answer": 2
+  },
+  {
+    "id": 554,
+    "question": "Tính chất nào của giáo dục thể hiện mục tiêu luôn hướng con người đến cái hay, cái đẹp, cái tốt và bảo vệ sự sống?",
+    "options": [
+      "Tính giai cấp",
+      "Tính phổ biến",
+      "Tính lịch sử",
+      "Tính nhân văn"
+    ],
+    "answer": 3
+  },
+  {
+    "id": 555,
+    "question": "Tính xã hội – lịch sử của giáo dục thể hiện rõ nhất ở điểm nào dưới đây?",
+    "options": [
+      "Mục đích, nội dung, phương pháp giáo dục biến đổi theo sự phát triển của các hình thái kinh tế – xã hội",
+      "Giáo dục ở mọi thời đại đều có mục tiêu và nội dung hoàn toàn giống nhau",
+      "Giáo dục không chịu sự tác động của các điều kiện kinh tế, chính trị",
+      "Giáo dục có thể bê nguyên mẫu từ quốc gia này sang quốc gia khác mà không cần điều chỉnh"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 556,
+    "question": "Trong xã hội có giai cấp đối kháng, tính giai cấp của giáo dục thể hiện tập trung nhất ở yếu tố nào?",
+    "options": [
+      "Phương tiện dạy học",
+      "Mục đích giáo dục",
+      "Môi trường tự nhiên",
+      "Tâm lý lứa tuổi học sinh"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 557,
+    "question": "Nền giáo dục xã hội chủ nghĩa ở Việt Nam mang tính chất cốt lõi nào dưới đây?",
+    "options": [
+      "Tính độc đoán và phân biệt đẳng cấp",
+      "Tính bất bình đẳng và phát triển phiến diện",
+      "Tính dân chủ và tính nhân đạo sâu sắc",
+      "Tính tự phát và phi giai cấp"
+    ],
+    "answer": 2
+  },
+  {
+    "id": 558,
+    "question": "Điểm khác biệt căn bản giữa hiện tượng giáo dục ở con người và sự truyền chăn/bắt chước ở động vật là gì?",
+    "options": [
+      "Con người học tập qua phản xạ không điều kiện",
+      "Động vật có ngôn ngữ tư duy phát triển hơn",
+      "Động vật truyền thụ kinh nghiệm bằng hoạt động có mục đích",
+      "Giáo dục ở con người là hoạt động có ý thức, có mục đích và mang tính xã hội"
+    ],
+    "answer": 3
+  },
+  {
+    "id": 559,
+    "question": "Khi xã hội chuyển từ hình thái kinh tế – xã hội này sang hình thái kinh tế – xã hội khác thì nền giáo dục tương ứng sẽ:",
+    "options": [
+      "Biến đổi theo để đáp ứng yêu cầu của hình thái kinh tế – xã hội mới",
+      "Giữ nguyên không thay đổi",
+      "Hoàn toàn tiêu vong và không còn tồn tại",
+      "Tự do phát triển không tuân theo quy luật nào"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 560,
+    "question": "Hiện tượng \"mèo dạy con bắt chuột\" KHÔNG PHẢI là hiện tượng giáo dục vì:",
+    "options": [
+      "Mèo không có khả năng di chuyển linh hoạt",
+      "Đây là hành vi mang tính bản năng sinh học, không có ý thức và mục đích xã hội",
+      "Mèo không sống trong môi trường nhà trường",
+      "Mèo không có hệ thần kinh"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 561,
+    "question": "Chức năng nào của giáo dục thể hiện sự tái sản xuất sức lao động xã hội và đào tạo lực lượng lao động?",
+    "options": [
+      "Chức năng chính trị – tư tưởng",
+      "Chức năng văn hóa – xã hội",
+      "Chức năng kinh tế – sản xuất",
+      "Chức năng củng cố an ninh quốc phòng"
+    ],
+    "answer": 2
+  },
+  {
+    "id": 562,
+    "question": "Chức năng kinh tế – sản xuất của giáo dục thể hiện tập trung nhất ở nhiệm vụ nào của hệ thống giáo dục?",
+    "options": [
+      "Nâng cao dân trí",
+      "Bảo tồn di sản văn hóa",
+      "Tuyên truyền đường lối chính trị",
+      "Đào tạo nhân lực"
+    ],
+    "answer": 3
+  },
+  {
+    "id": 563,
+    "question": "Theo lý thuyết kinh tế hiện đại, trong các nguồn vốn (tài nguyên, sản xuất, khoa học – công nghệ, nhân lực), nguồn vốn nào được coi là quan trọng nhất?",
+    "options": [
+      "Vốn nhân lực (vì giữ vai trò chủ thể quyết định hiệu quả các nguồn vốn khác)",
+      "Vốn tài nguyên thiên nhiên",
+      "Vốn sản xuất vật chất thuần túy",
+      "Vốn vay từ các tổ chức tài chính quốc tế"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 564,
+    "question": "Chức năng chính trị – tư tưởng của giáo dục thể hiện ở nội dung nào sau đây?",
+    "options": [
+      "Đào tạo công nhân vận hành máy móc",
+      "Tuyên truyền, phổ biến hệ tư tưởng và đường lối chính sách của giai cấp cầm quyền",
+      "Giữ gìn các bài hát dân ca truyền thống",
+      "Rèn luyện thể lực cho học sinh"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 565,
+    "question": "Việc giáo dục góp phần nâng cao trình độ văn hóa chung và mở rộng hiểu biết cho toàn dân phản ánh chức năng nào của giáo dục?",
+    "options": [
+      "Chức năng kinh tế – sản xuất",
+      "Chức năng duy trì nòi giống",
+      "Chức năng văn hóa – xã hội (nâng cao dân trí)",
+      "Chức năng đối ngoại"
+    ],
+    "answer": 2
+  },
+  {
+    "id": 566,
+    "question": "Con đường cơ bản nhất để giáo dục thực hiện chức năng bảo tồn và phát triển văn hóa dân tộc/nhân loại là gì?",
+    "options": [
+      "Tổ chức các lễ hội dân gian tự phát",
+      "Truyền miệng trong sinh hoạt gia đình",
+      "Giao lưu thương mại tự do",
+      "Dạy học trong nhà trường"
+    ],
+    "answer": 3
+  },
+  {
+    "id": 567,
+    "question": "Giáo dục xã hội chủ nghĩa góp phần làm cho cấu trúc xã hội trở nên thuần nhất hơn bằng cách nào?",
+    "options": [
+      "Xóa bỏ sự phân chia giai cấp và làm cho các tầng lớp xã hội xích lại gần nhau",
+      "Cố tình khoét sâu sự phân hóa giàu nghèo",
+      "Duy trì chế độ đẳng cấp phong kiến",
+      "Cấm đoán các hoạt động giao lưu giữa các nhóm xã hội"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 568,
+    "question": "Đại hội Đảng Cộng sản Việt Nam khóa VII (1991) đã khẳng định quan điểm chiến lược nào về giáo dục?",
+    "options": [
+      "Phát triển giáo dục là nhiệm vụ phụ trợ",
+      "Phát triển giáo dục là \"quốc sách hàng đầu\"",
+      "Giáo dục chỉ dành cho khu vực đô thị",
+      "Đầu tư cho giáo dục là đầu tư tiêu tốn ngân sách không thu hồi"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 569,
+    "question": "Vì sao nói \"Đầu tư cho giáo dục là đầu tư cho sự phát triển bền vững nhất\"?",
+    "options": [
+      "Vì chi phí cho giáo dục luôn thấp hơn các ngành khác",
+      "Vì giáo dục không cần sử dụng cơ sở vật chất",
+      "Vì giáo dục tạo ra sức lao động mới chất lượng cao, thúc đẩy kinh tế – xã hội phát triển lâu dài",
+      "Vì kết quả giáo dục thu được ngay lập tức sau vài ngày"
+    ],
+    "answer": 2
+  },
+  {
+    "id": 570,
+    "question": "Trong nền kinh tế tri thức hiện đại, yếu tố nào đóng vai trò quyết định tốc độ tăng trưởng kinh tế?",
+    "options": [
+      "Số lượng tài nguyên khoáng sản thô",
+      "Số lượng lao động phổ thông chưa qua đào tạo",
+      "Mức độ ô nhiễm môi trường",
+      "Chất lượng nguồn nhân lực (trình độ thể lực, trí lực và tâm lực)"
+    ],
+    "answer": 3
+  },
+  {
+    "id": 571,
+    "question": "Theo quan điểm duy vật biện chứng, sự hình thành và phát triển nhân cách chịu tác động của mấy nhóm yếu tố chính?",
+    "options": [
+      "4 yếu tố (di truyền, môi trường, giáo dục, hoạt động cá nhân)",
+      "2 yếu tố (di truyền và môi trường)",
+      "3 yếu tố (gia đình, nhà trường, xã hội)",
+      "1 yếu tố duy nhất (di truyền)"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 572,
+    "question": "Yếu tố bẩm sinh – di truyền giữ vai trò gì đối với sự phát triển nhân cách cá nhân?",
+    "options": [
+      "Giữ vai trò chủ đạo",
+      "Là tiền đề vật chất",
+      "Quyết định trực tiếp",
+      "Ảnh hưởng tuyệt đối vạn năng"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 573,
+    "question": "Môi trường sống (tự nhiên và xã hội) giữ vai trò gì đối với sự phát triển nhân cách?",
+    "options": [
+      "Tiền đề sinh học",
+      "Quyết định tuyệt đối",
+      "Ảnh hưởng quan trọng",
+      "Giữ vai trò chủ đạo"
+    ],
+    "answer": 2
+  },
+  {
+    "id": 574,
+    "question": "Trong sự hình thành và phát triển nhân cách, yếu tố nào giữ vai trò chủ đạo?",
+    "options": [
+      "Di truyền",
+      "Môi trường",
+      "Hoạt động cá nhân",
+      "Giáo dục"
+    ],
+    "answer": 3
+  },
+  {
+    "id": 575,
+    "question": "Yếu tố nào giữ vai trò quyết định trực tiếp đối với sự phát triển nhân cách cá nhân?",
+    "options": [
+      "Hoạt động và giao lưu cá nhân (tính tích cực cá nhân)",
+      "Yếu tố di truyền từ cha mẹ",
+      "Điều kiện thời tiết khí hậu",
+      "Sự hoàn toàn thụ động tiếp nhận"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 576,
+    "question": "Vai trò chủ đạo của giáo dục đối với sự phát triển nhân cách thể hiện ở điểm nào sau đây?",
+    "options": [
+      "Tạo ra sẵn các gen tài năng cho con người",
+      "Vạch ra mục đích, phương hướng, tổ chức dẫn dắt và điều chỉnh quá trình phát triển nhân cách",
+      "Thay thế hoàn toàn mọi hoạt động của cá nhân",
+      "Quyết định 100% kết quả nhân cách mà không cần cá nhân nỗ lực"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 577,
+    "question": "Đối với các tư chất, năng khiếu bẩm sinh – di truyền, giáo dục có khả năng:",
+    "options": [
+      "Triệt tiêu hoàn toàn các tư chất đó",
+      "Tự động thay đổi cấu trúc gen",
+      "Phát hiện, bồi dưỡng để chuyển hóa tư chất thành năng lực thực tiễn",
+      "Không có bất kỳ tác động nào"
+    ],
+    "answer": 2
+  },
+  {
+    "id": 578,
+    "question": "Đối với trẻ em bị khuyết tật về cơ thể hoặc trí tuệ, giáo dục có vai trò đặc biệt nào?",
+    "options": [
+      "Phủ nhận khả năng học tập của trẻ",
+      "Cách ly hoàn toàn trẻ khỏi xã hội",
+      "Ép buộc trẻ làm các bài tập quá sức",
+      "Bù đắp, phục hồi chức năng và hạn chế tác động tiêu cực của khuyết tật"
+    ],
+    "answer": 3
+  },
+  {
+    "id": 579,
+    "question": "Giáo dục đúng đắn sẽ tạo tiền đề quan trọng cho yếu tố nào bên trong cá nhân phát triển?",
+    "options": [
+      "Tự giáo dục",
+      "Tính thụ động",
+      "Sự ỷ lại vào người khác",
+      "Ý muốn bỏ học"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 580,
+    "question": "Để giáo dục thực hiện tốt vai trò chủ đạo, điều kiện nào sau đây là quan trọng nhất về phía người được giáo dục?",
+    "options": [
+      "Người được giáo dục chỉ cần ngồi im nghe giảng",
+      "Người được giáo dục phải thể hiện vai trò chủ thể tích cực, tự giác tiếp nhận và tự rèn luyện",
+      "Người được giáo dục không cần sự hướng dẫn của thầy cô",
+      "Người được giáo dục phụ thuộc hoàn toàn vào hoàn cảnh gia đình"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 581,
+    "question": "Giáo dục học chính thức tách khỏi Triết học để trở thành một khoa học độc lập vào thời gian nào?",
+    "options": [
+      "Thời kỳ cổ đại",
+      "Thế kỷ thứ V",
+      "Đầu thế kỷ XVII",
+      "Cuối thế kỷ XX"
+    ],
+    "answer": 2
+  },
+  {
+    "id": 582,
+    "question": "Nhà giáo dục vĩ đại nào được coi là người đặt nền móng cho Giáo dục học trở thành một khoa học độc lập với tác phẩm \"Phép giảng dạy vĩ đại\" (1632)?",
+    "options": [
+      "J.J. Rousseau",
+      "K.D. Usinxki",
+      "A.S. Macarencô",
+      "J.A. Cômenxki (Comenius)"
+    ],
+    "answer": 3
+  },
+  {
+    "id": 583,
+    "question": "Khoa học nào được xem là cơ sở phương pháp luận Mác-xít của Giáo dục học?",
+    "options": [
+      "Triết học Mác – Lênin",
+      "Toán học dựng hình",
+      "Cổ sinh vật học",
+      "Hóa học hữu cơ"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 584,
+    "question": "Đối tượng nghiên cứu tổng quát của Giáo dục học là gì?",
+    "options": [
+      "Quy luật vận động của hệ mặt trời",
+      "Hiện tượng giáo dục – hoạt động giáo dục tổng thể nhằm hình thành và phát triển nhân cách",
+      "Cơ chế co bóp của cơ tim",
+      "Quá trình biến đổi của thị trường chứng khoán"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 585,
+    "question": "Mối quan hệ giữa nhà giáo dục và người được giáo dục trong hoạt động giáo dục có bản chất là:",
+    "options": [
+      "Quan hệ mua bán dịch vụ thuần túy",
+      "Quan hệ áp đặt một chiều",
+      "Quan hệ tương tác biện chứng (nhà giáo dục giữ vai trò chủ đạo, người được giáo dục là chủ thể tích cực)",
+      "Quan hệ hoàn toàn tách biệt độc lập"
+    ],
+    "answer": 2
+  },
+  {
+    "id": 586,
+    "question": "Nhóm phương pháp nghiên cứu lý luận trong Giáo dục học bao gồm các thao tác nào?",
+    "options": [
+      "Đo chiều cao, cân nặng của học sinh",
+      "Phỏng vấn trực tiếp phụ huynh",
+      "Phát phiếu khảo sát trắc nghiệm",
+      "Phân tích, tổng hợp, phân loại và hệ thống hóa tài liệu lý thuyết"
+    ],
+    "answer": 3
+  },
+  {
+    "id": 587,
+    "question": "Phương pháp nghiên cứu thực tiễn nào cho phép nhà nghiên cứu chủ động tạo ra các tình huống sư phạm có kiểm soát để kiểm chứng giả thuyết?",
+    "options": [
+      "Thực nghiệm sư phạm",
+      "Quan sát tự phát",
+      "Đọc sách báo cũ",
+      "Thống kê số liệu có sẵn"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 588,
+    "question": "Hoạt động giáo dục tổng thể trong nhà trường phổ thông bao gồm hai hệ thống vi mô bộ phận nào thống nhất với nhau?",
+    "options": [
+      "Hoạt động kinh doanh và hoạt động quản lý",
+      "Hoạt động dạy học và các hoạt động giáo dục / trải nghiệm",
+      "Hoạt động xây dựng cơ sở vật chất và hoạt động bảo vệ",
+      "Hoạt động thể thao đơn thuần và hoạt động nghỉ ngơi"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 589,
+    "question": "Theo Luật Giáo dục 2019, mục đích giáo dục Việt Nam trên bình diện xã hội bao gồm 3 mục tiêu cốt lõi là:",
+    "options": [
+      "Tăng trưởng kinh tế, mở rộng lãnh thổ, phát triển công nghiệp",
+      "Phổ cập đại học, xuất khẩu lao động, giảm tỷ lệ sinh",
+      "Nâng cao dân trí, đào tạo nhân lực, bồi dưỡng nhân tài",
+      "Hiện đại hóa quân đội, số hóa dữ liệu, phát triển du lịch"
+    ],
+    "answer": 2
+  },
+  {
+    "id": 590,
+    "question": "Mặt bằng \"dân trí\" của một quốc gia thường được đo lường cụ thể bằng chỉ số nào?",
+    "options": [
+      "Tỷ lệ dân số sống ở thành thị",
+      "Tỷ lệ sở hữu xe hơi cá nhân",
+      "Số lượng trường đại học công lập",
+      "Số năm học trung bình của người dân"
+    ],
+    "answer": 3
+  },
+  {
+    "id": 591,
+    "question": "\"Nhân tài\" có cấu trúc phát triển gồm 4 tầng từ thấp đến cao là:",
+    "options": [
+      "Khiếu (năng khiếu) → Năng lực → Tài năng → Thiên tài",
+      "Học vấn → Bằng cấp → Địa vị → Quyền lực",
+      "Tri thức → Kỹ năng → Kỹ xảo → Thói quen",
+      "Cảm xúc → Lý trí → Ý chí → Hành vi"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 592,
+    "question": "Theo Chương trình GDPT 2018, hệ thống 5 phẩm chất chủ yếu cần hình thành cho học sinh phổ thông gồm:",
+    "options": [
+      "Cần, kiệm, liêm, chính, chí công vô tư",
+      "Yêu nước, nhân ái, chăm chỉ, trung thực, trách nhiệm",
+      "Tự tin, dũng cảm, mạo hiểm, năng động, linh hoạt",
+      "Hòa đồng, khiêm tốn, lịch sự, tôn trọng, kỷ luật"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 593,
+    "question": "Ba năng lực chung cốt lõi được hình thành qua tất cả các môn học và hoạt động giáo dục theo Chương trình GDPT 2018 là:",
+    "options": [
+      "Năng lực ngôn ngữ, năng lực tính toán, năng lực tin học",
+      "Năng lực thẩm mỹ, năng lực thể chất, năng lực công nghệ",
+      "Tự chủ và tự học, Giao tiếp và hợp tác, Giải quyết vấn đề và sáng tạo",
+      "Năng lực quản lý, năng lực lãnh đạo, năng lực kinh doanh"
+    ],
+    "answer": 2
+  },
+  {
+    "id": 594,
+    "question": "Khái niệm \"Năng lực\" được hiểu là gì?",
+    "options": [
+      "Khả năng ghi nhớ thuộc lòng toàn bộ sách giáo khoa",
+      "Mức độ điểm số đạt được trong các kỳ thi trắc nghiệm",
+      "Tố chất di truyền không thay đổi từ lúc sinh ra",
+      "Thuộc tính cá nhân huy động tổng hợp tri thức, kỹ năng, thái độ để thực hiện thành công hoạt động nhất định"
+    ],
+    "answer": 3
+  },
+  {
+    "id": 595,
+    "question": "Sự phân luồng trong giáo dục phổ thông theo Luật Giáo dục 2019 chia làm 2 giai đoạn chính là:",
+    "options": [
+      "Giai đoạn giáo dục cơ bản (Lớp 1-9) và Giai đoạn giáo dục định hướng nghề nghiệp (Lớp 10-12)",
+      "Giai đoạn mầm non và Giai đoạn tiểu học",
+      "Giai đoạn học lý thuyết và Giai đoạn thực hành",
+      "Giai đoạn trong nhà trường và Giai đoạn ngoài nhà trường"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 596,
+    "question": "Nguyên lý giáo dục của Việt Nam được quy định tại Điều 3 Luật Giáo dục 2019 gồm những mệnh đề nào?",
+    "options": [
+      "Học đi đôi với hành, dạy học theo nhu cầu, giáo dục tự do",
+      "Học đi đôi với hành, lý luận gắn liền với thực tiễn, giáo dục nhà trường kết hợp với giáo dục gia đình và giáo dục xã hội",
+      "Lý luận đi trước thực tiễn, nhà trường quyết định hoàn toàn",
+      "Học tập suốt đời, thi cử nghiêm túc, kỷ luật tuyệt đối"
+    ],
+    "answer": 1
+  },
+  {
+    "id": 597,
+    "question": "Yêu cầu \"Lý luận gắn liền với thực tiễn\" đòi hỏi nhà giáo dục phải làm gì trong quá trình dạy học?",
+    "options": [
+      "Chỉ giảng dạy lý thuyết thật kỹ mà không cần liên hệ thực tế",
+      "Cho học sinh đi làm việc ngay mà không cần học lý thuyết",
+      "Xuất phát từ thực tiễn, dùng thực tiễn minh họa lý luận và hướng dẫn học sinh vận dụng lý luận cải tạo thực tiễn",
+      "Bắt học sinh học thuộc lòng các công thức khoa học"
+    ],
+    "answer": 2
+  },
+  {
+    "id": 598,
+    "question": "Trong mối quan hệ giữa 3 môi trường giáo dục (Nhà trường – Gia đình – Xã hội), môi trường nào giữ vai trò chủ đạo?",
+    "options": [
+      "Gia đình",
+      "Xã hội",
+      "Nhóm bạn bè",
+      "Giáo dục nhà trường"
+    ],
+    "answer": 3
+  },
+  {
+    "id": 599,
+    "question": "Việc kết hợp giữa ba môi trường giáo dục (Nhà trường – Gia đình – Xã hội) nhằm mục đích quan trọng nhất là:",
+    "options": [
+      "Tạo nên sức mạnh tổng hợp và sự thống nhất trong các tác động giáo dục đối với học sinh",
+      "San chia kinh phí đầu tư trường học",
+      "Giảm bớt trách nhiệm của nhà trường",
+      "Thay thế vai trò của giáo viên chủ nhiệm"
+    ],
+    "answer": 0
+  },
+  {
+    "id": 600,
+    "question": "Ý nghĩa của việc thực hiện nguyên lý \"Học đi đôi với hành\" đối với người học là gì?",
+    "options": [
+      "Giúp học sinh nhanh chóng kết thúc năm học",
+      "Giúp người học củng cố tri thức, hình thành kỹ năng, kỹ xảo và phát triển năng lực giải quyết vấn đề thực tiễn",
+      "Giúp nhà trường tiết kiệm thiết bị dạy học",
+      "Giúp giảm bớt số lượng bài kiểm tra"
+    ],
+    "answer": 1
+  },
 ]
 
 
