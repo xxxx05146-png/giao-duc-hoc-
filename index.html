@@ -451,6 +451,7 @@ th { background: var(--surface-2); font-weight: 600; color: var(--text-secondary
     isolation: isolate;
     margin: 0 14px;
     padding-bottom: 22px;
+    touch-action: pan-y pinch-zoom;
 }
 .study-deck.has-stack::before,
 .study-deck.has-stack::after {
@@ -472,15 +473,19 @@ th { background: var(--surface-2); font-weight: 600; color: var(--text-secondary
     padding: 15px;
     background: var(--surface-2);
     border-radius: var(--radius-lg);
-    touch-action: pan-y pinch-zoom;
     user-select: none;
-    will-change: transform;
-    transform: translateX(var(--drag-x, 0px)) rotate(var(--drag-angle, 0deg));
+    transform: none;
+    transition: none;
+}
+#study-card { position: relative; z-index: 1; }
+.study-deck .study-card-preview {
+    position: absolute;
+    inset: 0 0 22px;
+    pointer-events: none;
 }
 .study-deck .study-card.chapter-card { background: var(--success-soft); }
 .study-deck .study-card.random { background: var(--accent-soft); }
 .study-deck .study-card.drill { background: var(--warning-soft); }
-.study-deck .study-card.dragging { transition: none; }
 .study-deck .study-card strong { font-size: 19px; }
 .study-deck .study-card-action { font-size: 13px; color: var(--accent); font-weight: 600; }
 .study-deck-controls {
@@ -640,6 +645,11 @@ th { background: var(--surface-2); font-weight: 600; color: var(--text-secondary
                         <span class="study-card-description"></span>
                         <span class="study-card-action">Bắt đầu →</span>
                     </button>
+                    <div class="exam-card study-card study-card-preview hidden" id="study-card-preview" aria-hidden="true">
+                        <strong></strong>
+                        <span class="study-card-description"></span>
+                        <span class="study-card-action">Bắt đầu →</span>
+                    </div>
                 </div>
                 <div class="study-deck-controls">
                     <button class="mobile-icon-button" id="study-prev" type="button" aria-label="Thẻ trước">‹</button>
@@ -1100,53 +1110,79 @@ function setupMobileLayout() {
 
 function setupStudyDeck(sheet) {
     const card = document.getElementById("study-card");
+    const preview = document.getElementById("study-card-preview");
     const deck = card.parentElement;
     const controls = deck.nextElementSibling;
     const previous = document.getElementById("study-prev");
     const next = document.getElementById("study-next");
     const position = document.getElementById("study-position");
     const empty = document.getElementById("study-deck-empty");
-    const hint = document.getElementById("study-swipe-hint");
     const reducedMotion = matchMedia("(prefers-reduced-motion: reduce)");
+    const swipeDistance = 24;
     let cards = [];
     let index = 0;
     let drag = null;
     let swiped = false;
+    let pendingIndex = null;
     let slideAnimation;
+
+    function paintCard(element, source) {
+        element.querySelector("strong").textContent = source.querySelector("strong").textContent;
+        element.querySelector(".study-card-description").textContent = source.querySelector("span").textContent;
+    }
 
     function showCard() {
         const source = cards[index];
         card.className = source.className + " study-card";
-        card.querySelector("strong").textContent = source.querySelector("strong").textContent;
-        card.querySelector(".study-card-description").textContent = source.querySelector("span").textContent;
+        paintCard(card, source);
         position.value = (index + 1) + " / " + cards.length;
         previous.disabled = index === 0;
         next.disabled = index === cards.length - 1;
     }
 
-    function move(step, swipedCard = false) {
-        const target = index + step;
-        if (target < 0 || target >= cards.length) return;
+    function settleSwipe() {
+        if (slideAnimation) {
+            slideAnimation.onfinish = null;
+            slideAnimation.cancel();
+            slideAnimation = null;
+        }
+        drag = null;
+        card.style.removeProperty("transform");
+        preview.classList.add("hidden");
+        if (pendingIndex !== null) {
+            index = pendingIndex;
+            pendingIndex = null;
+            showCard();
+        }
+    }
 
-        slideAnimation?.cancel();
+    function move(step) {
+        settleSwipe();
+        const target = index + step;
+        if (!cards[target]) return;
         index = target;
         showCard();
-        if (!reducedMotion.matches) {
-            const distance = swipedCard ? card.clientWidth * 0.28 : 34;
-            slideAnimation = card.animate(
-                [{ transform: "translateX(" + (step * distance) + "px)", opacity: 0.55 }, { transform: "none", opacity: 1 }],
-                { duration: 220, easing: "cubic-bezier(0.2, 0.8, 0.2, 1)" }
-            );
+    }
+
+    function showPreview(target) {
+        if (drag.previewIndex === target) return;
+        drag.previewIndex = target;
+        const source = cards[target];
+        if (source) {
+            preview.className = source.className + " study-card study-card-preview";
+            paintCard(preview, source);
+        } else {
+            preview.classList.add("hidden");
         }
     }
 
     document.querySelectorAll(".mobile-menu button").forEach((button) => {
         button.addEventListener("click", () => {
+            settleSwipe();
             const list = document.getElementById(button.dataset.list);
             cards = Array.from(list.querySelectorAll(".exam-card"));
             index = 0;
             swiped = false;
-            slideAnimation?.cancel();
             document.getElementById("study-sheet-title").textContent = button.querySelector("strong").textContent;
             empty.classList.toggle("hidden", cards.length > 0);
             deck.classList.toggle("hidden", cards.length === 0);
@@ -1169,46 +1205,74 @@ function setupStudyDeck(sheet) {
     });
     card.addEventListener("click", (event) => {
         if (swiped && event.detail > 0) return;
+        settleSwipe();
         cards[index]?.click();
     });
 
-    card.addEventListener("pointerdown", (event) => {
+    deck.addEventListener("pointerdown", (event) => {
         if (!event.isPrimary) return;
+        settleSwipe();
         swiped = false;
         if (event.pointerType !== "touch" || cards.length < 2) return;
-        slideAnimation?.cancel();
-        drag = { id: event.pointerId, x: event.clientX, y: event.clientY };
+        drag = { id: event.pointerId, x: event.clientX, y: event.clientY, width: card.offsetWidth };
     });
 
-    card.addEventListener("pointermove", (event) => {
-        if (event.pointerId !== drag?.id || reducedMotion.matches) return;
-        const x = event.clientX - drag.x;
-        const y = event.clientY - drag.y;
-        if (Math.abs(x) <= Math.abs(y) || Math.abs(x) < 8) return;
-
-        const offset = Math.max(-110, Math.min(110, x * 0.75));
-        card.classList.add("dragging");
-        card.style.setProperty("--drag-x", offset + "px");
-        card.style.setProperty("--drag-angle", (offset / 24) + "deg");
-    });
-
-    function resetDrag() {
-        drag = null;
-        card.classList.remove("dragging");
-        card.style.removeProperty("--drag-x");
-        card.style.removeProperty("--drag-angle");
+    function dragTransform(offset) {
+        const angle = Math.max(-7, Math.min(7, offset / 32));
+        return "translateX(" + offset + "px) rotate(" + angle + "deg)";
     }
 
-    card.addEventListener("pointerup", (event) => {
+    deck.addEventListener("pointermove", (event) => {
         if (event.pointerId !== drag?.id) return;
         const x = event.clientX - drag.x;
         const y = event.clientY - drag.y;
-        swiped = Math.abs(x) >= 14 && Math.abs(x) > Math.abs(y);
-        resetDrag();
-        if (swiped && Math.abs(x) >= 44) move(x < 0 ? 1 : -1, true);
+        const horizontal = Math.abs(x) > Math.abs(y);
+        if (horizontal && Math.abs(x) >= 10) swiped = true;
+        if (reducedMotion.matches) return;
+        if (!horizontal || Math.abs(x) < 6) {
+            card.style.removeProperty("transform");
+            drag.previewIndex = null;
+            preview.classList.add("hidden");
+            return;
+        }
+
+        const target = index + (x < 0 ? 1 : -1);
+        showPreview(target);
+        const limit = drag.width * 0.84;
+        const offset = x * (cards[target] ? 0.95 : 0.28);
+        card.style.transform = dragTransform(Math.max(-limit, Math.min(limit, offset)));
     });
-    card.addEventListener("pointercancel", resetDrag);
-    sheet.addEventListener("close", resetDrag);
+
+    deck.addEventListener("pointerup", (event) => {
+        if (event.pointerId !== drag?.id) return;
+        const x = event.clientX - drag.x;
+        const y = event.clientY - drag.y;
+        const target = index + (x < 0 ? 1 : -1);
+        const horizontal = Math.abs(x) > Math.abs(y);
+        swiped = swiped || (horizontal && Math.abs(x) >= 10);
+        const advances = horizontal && Math.abs(x) >= swipeDistance && cards[target];
+        if (advances) pendingIndex = target;
+
+        if (reducedMotion.matches || (!advances && !card.style.transform)) {
+            settleSwipe();
+            return;
+        }
+
+        const start = card.style.transform || "none";
+        const end = advances ? dragTransform(Math.sign(x) * (drag.width + 36)) : "none";
+        if (advances) showPreview(target);
+        drag = null;
+        // Reveal the next card under the moving one and leave it in place at the end.
+        slideAnimation = card.animate(
+            [{ transform: start }, { transform: end }],
+            { duration: advances ? 150 : 135, easing: "cubic-bezier(0.2, 0.8, 0.2, 1)", fill: "forwards" }
+        );
+        slideAnimation.onfinish = settleSwipe;
+    });
+    deck.addEventListener("pointercancel", (event) => {
+        if (event.pointerId === drag?.id) settleSwipe();
+    });
+    sheet.addEventListener("close", settleSwipe);
 }
 
 /* ============================================================
