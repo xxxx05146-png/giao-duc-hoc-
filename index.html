@@ -343,7 +343,7 @@ th { background: var(--surface-2); font-weight: 600; color: var(--text-secondary
     .palette-grid { grid-template-columns: repeat(6, 1fr); }
 }
 
-.mobile-menu, .mobile-palette-toggle { display: none; }
+.mobile-menu, .mobile-palette-toggle, .mobile-submit-end { display: none; }
 .desktop-menu { display: contents; }
 
 .mobile-layout .mobile-menu {
@@ -507,6 +507,7 @@ th { background: var(--surface-2); font-weight: 600; color: var(--text-secondary
 
 .mobile-layout .quiz-wrapper { flex-direction: column-reverse; gap: 12px; }
 .mobile-layout .quiz-main { width: 100%; }
+.mobile-layout .mobile-submit-end { display: block; min-height: 44px; margin: 4px 0 0; }
 .mobile-layout #quiz-screen { padding-bottom: calc(60px + env(safe-area-inset-bottom)); }
 .mobile-layout .quiz-sidebar {
     display: grid;
@@ -517,10 +518,21 @@ th { background: var(--surface-2); font-weight: 600; color: var(--text-secondary
     gap: 8px;
     padding: 12px;
 }
-.mobile-layout .quiz-sidebar .timer-box,
 .mobile-layout .quiz-sidebar .progress-track,
 .mobile-layout .quiz-sidebar .progress-label { grid-column: 1 / -1; margin: 0; }
-.mobile-layout .quiz-sidebar .timer-box { padding: 6px; font-size: 18px; }
+.mobile-layout .quiz-sidebar .timer-box {
+    position: fixed;
+    z-index: 5;
+    top: calc(12px + env(safe-area-inset-top));
+    left: calc(14px + env(safe-area-inset-left));
+    margin: 0;
+    padding: 7px 11px;
+    border-radius: 999px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.24);
+    font-size: 16px;
+    line-height: 1.25;
+    pointer-events: none;
+}
 .mobile-layout .quiz-sidebar .btn-submit-sidebar,
 .mobile-layout .quiz-sidebar .btn-exit-sidebar { min-height: 44px; margin: 2px 0 0; padding: 6px; }
 .mobile-layout .quiz-sidebar .sidebar-label,
@@ -653,10 +665,11 @@ th { background: var(--surface-2); font-weight: 600; color: var(--text-secondary
             <div class="quiz-main">
                 <h2 id="exam-title" style="margin-top:0; border-bottom:1px solid var(--divider); padding-bottom:14px; font-size:20px; font-weight:700;">Đề thi</h2>
                 <div id="question-container"></div>
+                <button type="button" class="btn-submit-sidebar mobile-submit-end" onclick="submitQuiz()">Nộp bài</button>
             </div>
 
             <div class="quiz-sidebar">
-                <div class="timer-box" id="timer-box">⏳ <span id="time-display">60:00</span></div>
+                <div class="timer-box" id="timer-box" role="timer" aria-label="Thời gian còn lại"><span aria-hidden="true">⏳</span> <span id="time-display">60:00</span></div>
 
                 <div class="progress-track"><div class="progress-fill" id="progress-fill"></div></div>
                 <div class="progress-label" id="progress-label">Đã làm 0/50 câu</div>
