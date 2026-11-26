@@ -343,39 +343,10 @@ th { background: var(--surface-2); font-weight: 600; color: var(--text-secondary
     .palette-grid { grid-template-columns: repeat(6, 1fr); }
 }
 
-.mobile-menu, .mobile-palette-toggle, .mobile-submit-end { display: none; }
-.desktop-menu { display: contents; }
-
-.mobile-layout .mobile-menu {
-    display: grid;
-    gap: 10px;
-    margin-bottom: 22px;
-}
-.mobile-menu button,
+.mobile-palette-toggle, .mobile-submit-end { display: none; }
 .mobile-icon-button,
 .mobile-palette-toggle,
 #question-sheet .palette-item { touch-action: manipulation; }
-.mobile-layout .desktop-menu { display: none; }
-.mobile-layout #stat-row { margin-bottom: 14px; }
-.mobile-layout #stat-row .empty-state { padding: 8px 12px !important; }
-.mobile-menu button {
-    display: grid;
-    grid-template-columns: 1fr auto;
-    align-items: center;
-    gap: 2px 12px;
-    padding: 14px 16px;
-    text-align: left;
-    font: inherit;
-    color: var(--text-primary);
-    background: var(--accent-soft);
-    border: 1px solid var(--divider);
-    border-radius: var(--radius-md);
-    cursor: pointer;
-}
-.mobile-menu button + button { background: var(--success-soft); }
-.mobile-menu strong { font-size: 15px; }
-.mobile-menu small { grid-row: 2; color: var(--text-secondary); font-size: 13px; }
-.mobile-menu button > span { grid-area: 1 / 2 / 3 / 3; font-size: 26px; color: var(--text-secondary); }
 
 .mobile-layout:has(.mobile-sheet[open]) { overflow: hidden; }
 .mobile-sheet:not([open]) { display: none; }
@@ -396,30 +367,15 @@ th { background: var(--surface-2); font-weight: 600; color: var(--text-secondary
     border-radius: 22px 22px 0 0;
     box-shadow: var(--shadow);
 }
-.mobile-sheet[open] { animation: study-sheet-in 240ms var(--ease) both; }
+.mobile-sheet[open] { animation: mobile-sheet-in 240ms var(--ease) both; }
 .mobile-sheet::backdrop {
     background: rgba(0, 0, 0, 0.54);
-    animation: study-backdrop-in 180ms ease-out both;
+    animation: mobile-backdrop-in 180ms ease-out both;
 }
-@keyframes study-sheet-in { from { transform: translateY(100%); } to { transform: translateY(0); } }
-@keyframes study-backdrop-in { from { opacity: 0; } to { opacity: 1; } }
+@keyframes mobile-sheet-in { from { transform: translateY(100%); } to { transform: translateY(0); } }
+@keyframes mobile-backdrop-in { from { opacity: 0; } to { opacity: 1; } }
 .mobile-sheet-content {
     padding: 18px 18px calc(16px + env(safe-area-inset-bottom));
-}
-
-#study-sheet {
-    inset: 0;
-    width: min(calc(100% - 36px), 420px);
-    height: fit-content;
-    margin: auto;
-    overflow-x: hidden;
-    border-radius: 22px;
-}
-#study-sheet[open] { animation: study-dialog-in 200ms var(--ease) both; }
-#study-sheet .mobile-sheet-content { padding-bottom: 18px; }
-@keyframes study-dialog-in {
-    from { opacity: 0; transform: translateY(8px) scale(0.98); }
-    to { opacity: 1; transform: none; }
 }
 
 .mobile-sheet-heading {
@@ -445,70 +401,6 @@ th { background: var(--surface-2); font-weight: 600; color: var(--text-secondary
     border-radius: 50%;
     cursor: pointer;
 }
-.mobile-icon-button:disabled { opacity: 0.35; cursor: default; }
-.study-deck {
-    position: relative;
-    isolation: isolate;
-    margin: 0 14px;
-    padding-bottom: 22px;
-    touch-action: pan-y pinch-zoom;
-}
-.study-deck.has-stack::before,
-.study-deck.has-stack::after {
-    content: "";
-    position: absolute;
-    inset: 0 12px 12px;
-    z-index: -1;
-    border: 1px solid var(--divider);
-    border-radius: var(--radius-lg);
-    background: var(--surface-2);
-}
-.study-deck.has-stack::before { inset: 0 24px 3px; }
-.study-deck .study-card {
-    width: 100%;
-    min-height: clamp(124px, 34vh, 270px);
-    min-height: clamp(124px, 34dvh, 270px);
-    justify-content: center;
-    gap: 8px;
-    padding: 15px;
-    background: var(--surface-2);
-    border-radius: var(--radius-lg);
-    user-select: none;
-    transform: none;
-    transition: none;
-}
-#study-card { position: relative; z-index: 1; }
-.study-deck .study-card-preview {
-    position: absolute;
-    inset: 0 0 22px;
-    pointer-events: none;
-}
-.study-deck .study-card.chapter-card { background: var(--success-soft); }
-.study-deck .study-card.random { background: var(--accent-soft); }
-.study-deck .study-card.drill { background: var(--warning-soft); }
-.study-deck .study-card strong { font-size: 19px; }
-.study-deck .study-card-action { font-size: 13px; color: var(--accent); font-weight: 600; }
-.study-deck-controls {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 12px;
-    margin: 0 14px;
-}
-.study-deck-controls p {
-    margin: 0;
-    color: var(--text-secondary);
-    text-align: center;
-    font-size: 13px;
-    line-height: 1.45;
-}
-.study-deck-controls output {
-    display: block;
-    color: var(--text-primary);
-    font-weight: 600;
-    font-variant-numeric: tabular-nums;
-}
-.study-deck-empty { margin: 0; padding: 12px 0; color: var(--text-secondary); }
 
 .mobile-layout .quiz-wrapper { flex-direction: column-reverse; gap: 12px; }
 .mobile-layout .quiz-main { width: 100%; }
@@ -613,52 +505,13 @@ th { background: var(--surface-2); font-weight: 600; color: var(--text-secondary
 
         <div class="stat-row" id="stat-row"></div>
 
-        <div class="mobile-menu">
-            <button type="button" data-list="exam-list" aria-haspopup="dialog" aria-controls="study-sheet">
-                <strong>Phần I · Đề thi tổng hợp</strong>
-                <small id="mobile-exam-summary"></small>
-                <span aria-hidden="true">›</span>
-            </button>
-            <button type="button" data-list="chapter-list" aria-haspopup="dialog" aria-controls="study-sheet">
-                <strong>Phần II · Ôn tập theo chương</strong>
-                <small id="mobile-chapter-summary"></small>
-                <span aria-hidden="true">›</span>
-            </button>
-        </div>
+        <!-- PHẦN I: ĐỀ THI TỔNG HỢP -->
+        <div class="section-title">📚 Phần I: Đề thi tổng hợp (Đề 1 - Đề 10)</div>
+        <div id="exam-list" class="grid-container"></div>
 
-        <div class="desktop-menu">
-            <div class="section-title">📚 Phần I: Đề thi tổng hợp (Đề 1 - Đề 10)</div>
-            <div id="exam-list" class="grid-container"></div>
-            <div class="section-title chapter-title" style="margin-top: 32px;">📖 Phần II: Ôn tập theo từng chương (Từ câu 501 trở đi)</div>
-            <div id="chapter-list" class="grid-container"></div>
-        </div>
-
-        <dialog class="mobile-sheet" id="study-sheet" aria-labelledby="study-sheet-title">
-            <div class="mobile-sheet-content">
-                <div class="mobile-sheet-heading">
-                    <h2 id="study-sheet-title"></h2>
-                    <button class="mobile-icon-button" type="button" data-close-sheet aria-label="Đóng danh sách" autofocus>×</button>
-                </div>
-                <div class="study-deck">
-                    <button class="exam-card study-card" id="study-card" type="button">
-                        <strong></strong>
-                        <span class="study-card-description"></span>
-                        <span class="study-card-action">Bắt đầu →</span>
-                    </button>
-                    <div class="exam-card study-card study-card-preview hidden" id="study-card-preview" aria-hidden="true">
-                        <strong></strong>
-                        <span class="study-card-description"></span>
-                        <span class="study-card-action">Bắt đầu →</span>
-                    </div>
-                </div>
-                <div class="study-deck-controls">
-                    <button class="mobile-icon-button" id="study-prev" type="button" aria-label="Thẻ trước">‹</button>
-                    <p><output id="study-position"></output><span id="study-swipe-hint">Vuốt ngang để đổi thẻ</span></p>
-                    <button class="mobile-icon-button" id="study-next" type="button" aria-label="Thẻ tiếp theo">›</button>
-                </div>
-                <p class="study-deck-empty hidden" id="study-deck-empty"></p>
-            </div>
-        </dialog>
+        <!-- PHẦN II: ÔN TẬP THEO TỪNG CHƯƠNG -->
+        <div class="section-title chapter-title" style="margin-top: 32px;">📖 Phần II: Ôn tập theo từng chương (Từ câu 501 trở đi)</div>
+        <div id="chapter-list" class="grid-container"></div>
 
         <div class="footer-actions">
             <button class="btn-history" onclick="showHistory()">Lịch sử &amp; đáp án chi tiết</button>
@@ -1070,12 +923,11 @@ window.addEventListener("DOMContentLoaded", function () {
 });
 
 function setupMobileLayout() {
-    const studySheet = document.getElementById("study-sheet");
-    if (typeof studySheet.showModal !== "function") return;
+    const questionSheet = document.getElementById("question-sheet");
+    if (typeof questionSheet.showModal !== "function") return;
 
     // Include short landscape touch screens while keeping the desktop layout at narrow window widths.
     const mobile = matchMedia("(max-width: 767px) and (pointer: coarse), (max-width: 960px) and (max-height: 540px) and (pointer: coarse)");
-    const questionSheet = document.getElementById("question-sheet");
     const palette = document.getElementById("question-palette");
     const sidebar = palette.parentElement;
     const sidebarHint = palette.nextElementSibling;
@@ -1086,193 +938,22 @@ function setupMobileLayout() {
         if (mobile.matches) {
             legend.before(palette);
         } else {
-            if (studySheet.open) studySheet.close();
             if (questionSheet.open) questionSheet.close();
             sidebar.insertBefore(palette, sidebarHint);
         }
     }
 
-    for (const sheet of [studySheet, questionSheet]) {
-        sheet.querySelector("[data-close-sheet]").addEventListener("click", () => sheet.close());
-        sheet.addEventListener("click", (event) => {
-            if (event.target === sheet) sheet.close();
-        });
-    }
+    questionSheet.querySelector("[data-close-sheet]").addEventListener("click", () => questionSheet.close());
+    questionSheet.addEventListener("click", (event) => {
+        if (event.target === questionSheet) questionSheet.close();
+    });
     document.getElementById("mobile-palette-toggle").addEventListener("click", () => {
         questionSheet.showModal();
         questionSheet.scrollTop = 0;
     });
 
-    setupStudyDeck(studySheet);
     mobile.addEventListener("change", syncLayout);
     syncLayout();
-}
-
-function setupStudyDeck(sheet) {
-    const card = document.getElementById("study-card");
-    const preview = document.getElementById("study-card-preview");
-    const deck = card.parentElement;
-    const controls = deck.nextElementSibling;
-    const previous = document.getElementById("study-prev");
-    const next = document.getElementById("study-next");
-    const position = document.getElementById("study-position");
-    const empty = document.getElementById("study-deck-empty");
-    const reducedMotion = matchMedia("(prefers-reduced-motion: reduce)");
-    const swipeDistance = 24;
-    let cards = [];
-    let index = 0;
-    let drag = null;
-    let swiped = false;
-    let pendingIndex = null;
-    let slideAnimation;
-
-    function paintCard(element, source) {
-        element.querySelector("strong").textContent = source.querySelector("strong").textContent;
-        element.querySelector(".study-card-description").textContent = source.querySelector("span").textContent;
-    }
-
-    function showCard() {
-        const source = cards[index];
-        card.className = source.className + " study-card";
-        paintCard(card, source);
-        position.value = (index + 1) + " / " + cards.length;
-        previous.disabled = index === 0;
-        next.disabled = index === cards.length - 1;
-    }
-
-    function settleSwipe() {
-        if (slideAnimation) {
-            slideAnimation.onfinish = null;
-            slideAnimation.cancel();
-            slideAnimation = null;
-        }
-        drag = null;
-        card.style.removeProperty("transform");
-        preview.classList.add("hidden");
-        if (pendingIndex !== null) {
-            index = pendingIndex;
-            pendingIndex = null;
-            showCard();
-        }
-    }
-
-    function move(step) {
-        settleSwipe();
-        const target = index + step;
-        if (!cards[target]) return;
-        index = target;
-        showCard();
-    }
-
-    function showPreview(target) {
-        if (drag.previewIndex === target) return;
-        drag.previewIndex = target;
-        const source = cards[target];
-        if (source) {
-            preview.className = source.className + " study-card study-card-preview";
-            paintCard(preview, source);
-        } else {
-            preview.classList.add("hidden");
-        }
-    }
-
-    document.querySelectorAll(".mobile-menu button").forEach((button) => {
-        button.addEventListener("click", () => {
-            settleSwipe();
-            const list = document.getElementById(button.dataset.list);
-            cards = Array.from(list.querySelectorAll(".exam-card"));
-            index = 0;
-            swiped = false;
-            document.getElementById("study-sheet-title").textContent = button.querySelector("strong").textContent;
-            empty.classList.toggle("hidden", cards.length > 0);
-            deck.classList.toggle("hidden", cards.length === 0);
-            deck.classList.toggle("has-stack", cards.length > 1);
-            controls.classList.toggle("hidden", cards.length < 2);
-            if (cards.length) showCard();
-            else empty.textContent = list.textContent.trim();
-            sheet.showModal();
-            sheet.scrollTop = 0;
-        });
-    });
-
-    previous.addEventListener("click", () => move(-1));
-    next.addEventListener("click", () => move(1));
-    sheet.addEventListener("keydown", (event) => {
-        if (event.key === "ArrowLeft" || event.key === "ArrowRight") {
-            event.preventDefault();
-            move(event.key === "ArrowLeft" ? -1 : 1);
-        }
-    });
-    card.addEventListener("click", (event) => {
-        if (swiped && event.detail > 0) return;
-        settleSwipe();
-        cards[index]?.click();
-    });
-
-    deck.addEventListener("pointerdown", (event) => {
-        if (!event.isPrimary) return;
-        settleSwipe();
-        swiped = false;
-        if (event.pointerType !== "touch" || cards.length < 2) return;
-        drag = { id: event.pointerId, x: event.clientX, y: event.clientY, width: card.offsetWidth };
-    });
-
-    function dragTransform(offset) {
-        const angle = Math.max(-7, Math.min(7, offset / 32));
-        return "translateX(" + offset + "px) rotate(" + angle + "deg)";
-    }
-
-    deck.addEventListener("pointermove", (event) => {
-        if (event.pointerId !== drag?.id) return;
-        const x = event.clientX - drag.x;
-        const y = event.clientY - drag.y;
-        const horizontal = Math.abs(x) > Math.abs(y);
-        if (horizontal && Math.abs(x) >= 10) swiped = true;
-        if (reducedMotion.matches) return;
-        if (!horizontal || Math.abs(x) < 6) {
-            card.style.removeProperty("transform");
-            drag.previewIndex = null;
-            preview.classList.add("hidden");
-            return;
-        }
-
-        const target = index + (x < 0 ? 1 : -1);
-        showPreview(target);
-        const limit = drag.width * 0.84;
-        const offset = x * (cards[target] ? 0.95 : 0.28);
-        card.style.transform = dragTransform(Math.max(-limit, Math.min(limit, offset)));
-    });
-
-    deck.addEventListener("pointerup", (event) => {
-        if (event.pointerId !== drag?.id) return;
-        const x = event.clientX - drag.x;
-        const y = event.clientY - drag.y;
-        const target = index + (x < 0 ? 1 : -1);
-        const horizontal = Math.abs(x) > Math.abs(y);
-        swiped = swiped || (horizontal && Math.abs(x) >= 10);
-        const advances = horizontal && Math.abs(x) >= swipeDistance && cards[target];
-        if (advances) pendingIndex = target;
-
-        if (reducedMotion.matches || (!advances && !card.style.transform)) {
-            settleSwipe();
-            return;
-        }
-
-        const start = card.style.transform || "none";
-        const end = advances ? dragTransform(Math.sign(x) * (drag.width + 36)) : "none";
-        if (advances) showPreview(target);
-        drag = null;
-        // Reveal the next card under the moving one and leave it in place at the end.
-        slideAnimation = card.animate(
-            [{ transform: start }, { transform: end }],
-            { duration: advances ? 150 : 135, easing: "cubic-bezier(0.2, 0.8, 0.2, 1)", fill: "forwards" }
-        );
-        slideAnimation.onfinish = settleSwipe;
-    });
-    deck.addEventListener("pointercancel", (event) => {
-        if (event.pointerId === drag?.id) settleSwipe();
-    });
-    sheet.addEventListener("close", settleSwipe);
 }
 
 /* ============================================================
@@ -1286,7 +967,6 @@ function buildMenu() {
     // Đề tổng hợp 1 đến 10 lấy tối đa 500 câu đầu
     const fixedPoolLength = Math.min(500, total);
     const totalFixedExams = Math.min(CONFIG.fixedExamCount, Math.ceil(fixedPoolLength / per));
-    document.getElementById("mobile-exam-summary").textContent = totalFixedExams + " đề · Có đề ngẫu nhiên";
     const done = doneExamTitles();
     const frag = document.createDocumentFragment();
 
@@ -1389,9 +1069,6 @@ function renderChapterSection() {
     if (!list) return;
     list.innerHTML = "";
     const chapters = getChapterGroups();
-    document.getElementById("mobile-chapter-summary").textContent = chapters.length
-        ? chapters.length + " chương"
-        : "Đang cập nhật";
     const done = doneExamTitles();
 
     if (chapters.length === 0) {
